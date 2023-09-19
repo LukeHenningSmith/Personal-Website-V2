@@ -11,8 +11,75 @@ import {
   faDatabase,
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import React, { useState } from "react";
 
 function SideBar() {
+  // Home
+  const [hoveredHome, setHoveredHome] = useState(false);
+  const handleMouseEnterHome = () => {
+    setAllFalse();
+    setHoveredHome(true);
+  };
+  const handleMouseLeaveHome = () => {
+    setHoveredHome(false);
+  };
+
+  //   Web Dev
+  const [hoveredWebDev, setHoveredWebDev] = useState(false);
+
+  const handleMouseEnterWebDev = () => {
+    setAllFalse();
+    setHoveredWebDev(true);
+  };
+
+  const handleMouseLeaveWebDev = () => {
+    setHoveredWebDev(false);
+  };
+
+  // Java Dev
+  const [hoveredJavaDev, setHoveredJavaDev] = useState(false);
+
+  const handleMouseEnterJavaDev = () => {
+    setAllFalse();
+    setHoveredJavaDev(true);
+  };
+
+  const handleMouseLeaveJavaDev = () => {
+    setHoveredJavaDev(false);
+  };
+
+  // Machine Learning
+  const [hoveredMachineLearning, setHoveredMachineLearning] = useState(false);
+
+  const handleMouseEnterMachineLearning = () => {
+    setAllFalse();
+    setHoveredMachineLearning(true);
+  };
+
+  const handleMouseLeaveMachineLearning = () => {
+    setHoveredMachineLearning(false);
+  };
+
+  // Data Analysis
+  const [hoveredDataAnalysis, setHoveredDataAnalysis] = useState(false);
+
+  const handleMouseEnterDataAnalysis = () => {
+    setAllFalse();
+    setHoveredDataAnalysis(true);
+  };
+
+  const handleMouseLeaveDataAnalysis = () => {
+    setHoveredDataAnalysis(false);
+  };
+
+  const setAllFalse = () => {
+    setHoveredHome(false);
+    setHoveredWebDev(false);
+    setHoveredJavaDev(false);
+    setHoveredMachineLearning(false);
+    setHoveredDataAnalysis(false);
+  };
+
   return (
     <>
       <div
@@ -43,13 +110,25 @@ function SideBar() {
               className={(navData) =>
                 navData.isActive ? "text-[#ffc102]" : "text-[#7f7f7f]"
               }
+              onMouseEnter={handleMouseEnterHome}
+              onMouseLeave={handleMouseLeaveHome}
             >
-              <FontAwesomeIcon
-                icon={faHome}
-                className="flex h-[16px] sm:h-[20px] md:h-[24px] lg:h-[28px] xl:h-[32px]
-                mb-5 xl:mb-7
+              {hoveredHome ? (
+                <div
+                  className="flex h-[14px] sm:h-[18px] md:h-[22px] lg:h-[26px] xl:h-[30px]
+                mb-5 xl:mb-8
+                 text-[#ffc102] mx-auto"
+                >
+                  <h1 className="text-xl">Home</h1>
+                </div>
+              ) : (
+                <FontAwesomeIcon
+                  icon={faHome}
+                  className="flex h-[14px] sm:h-[18px] md:h-[22px] lg:h-[26px] xl:h-[30px]
+                mb-5 xl:mb-8
                  hover:text-[#ffc102] focus:text-[#ffc102] mx-auto"
-              />
+                />
+              )}
             </NavLink>
 
             <NavLink
@@ -59,13 +138,25 @@ function SideBar() {
               className={(navData) =>
                 navData.isActive ? "text-[#ffc102]" : "text-[#7f7f7f]"
               }
+              onMouseEnter={handleMouseEnterWebDev}
+              onMouseLeave={handleMouseLeaveWebDev}
             >
-              <FontAwesomeIcon
-                icon={faWindowMaximize}
-                className="flex h-[16px] sm:h-[20px] md:h-[24px] lg:h-[28px] xl:h-[32px]
-                mb-5 xl:mb-7
+              {hoveredWebDev ? (
+                <div
+                  className="flex h-[14px] sm:h-[18px] md:h-[22px] lg:h-[26px] xl:h-[30px]
+                mb-5 xl:mb-8
+                 text-[#ffc102] mx-auto"
+                >
+                  <h1 className="text-xl">Web Dev</h1>
+                </div>
+              ) : (
+                <FontAwesomeIcon
+                  icon={faWindowMaximize}
+                  className="flex h-[14px] sm:h-[18px] md:h-[22px] lg:h-[26px] xl:h-[30px]
+                mb-5 xl:mb-8
                  hover:text-[#ffc102] focus:text-[#ffc102] mx-auto"
-              />
+                />
+              )}
             </NavLink>
 
             <NavLink
@@ -75,13 +166,25 @@ function SideBar() {
               className={(navData) =>
                 navData.isActive ? "text-[#ffc102]" : "text-[#7f7f7f]"
               }
+              onMouseEnter={handleMouseEnterJavaDev}
+              onMouseLeave={handleMouseLeaveJavaDev}
             >
-              <FontAwesomeIcon
-                icon={faCloud}
-                className="flex h-[16px] sm:h-[20px] md:h-[24px] lg:h-[28px] xl:h-[32px]
-                mb-5 xl:mb-7 
+              {hoveredJavaDev ? (
+                <div
+                  className="flex h-[14px] sm:h-[18px] md:h-[22px] lg:h-[26px] xl:h-[30px]
+                mb-5 xl:mb-8
+                 text-[#ffc102] mx-auto"
+                >
+                  <h1 className="text-xl">Java Dev</h1>
+                </div>
+              ) : (
+                <FontAwesomeIcon
+                  icon={faCloud}
+                  className="flex h-[14px] sm:h-[18px] md:h-[22px] lg:h-[26px] xl:h-[30px]
+                mb-5 xl:mb-8 
                  hover:text-[#ffc102] focus:text-[#ffc102] mx-auto"
-              />
+                />
+              )}
             </NavLink>
 
             <NavLink
@@ -91,13 +194,25 @@ function SideBar() {
               className={(navData) =>
                 navData.isActive ? "text-[#ffc102]" : "text-[#7f7f7f]"
               }
+              onMouseEnter={handleMouseEnterMachineLearning}
+              onMouseLeave={handleMouseLeaveMachineLearning}
             >
-              <FontAwesomeIcon
-                icon={faBrain}
-                className="flex h-[16px] sm:h-[20px] md:h-[24px] lg:h-[28px] xl:h-[32px]
-                mb-5 xl:mb-7 
+              {hoveredMachineLearning ? (
+                <div
+                  className="flex h-[14px] sm:h-[18px] md:h-[22px] lg:h-[26px] xl:h-[30px]
+                mb-5 xl:mb-8
+                 text-[#ffc102] mx-auto"
+                >
+                  <h1 className="text-xl">Machine Learning</h1>
+                </div>
+              ) : (
+                <FontAwesomeIcon
+                  icon={faBrain}
+                  className="flex h-[14px] sm:h-[18px] md:h-[22px] lg:h-[26px] xl:h-[30px]
+                mb-5 xl:mb-8 
                   hover:text-[#ffc102] focus:text-[#ffc102] mx-auto"
-              />
+                />
+              )}
             </NavLink>
 
             <NavLink
@@ -107,13 +222,25 @@ function SideBar() {
               className={(navData) =>
                 navData.isActive ? "text-[#ffc102]" : "text-[#7f7f7f]"
               }
+              onMouseEnter={handleMouseEnterDataAnalysis}
+              onMouseLeave={handleMouseLeaveDataAnalysis}
             >
-              <FontAwesomeIcon
-                icon={faDatabase}
-                className="flex h-[16px] sm:h-[20px] md:h-[24px] lg:h-[28px] xl:h-[32px]
-                mb-5 xl:mb-7 
+              {hoveredDataAnalysis ? (
+                <div
+                  className="flex h-[14px] sm:h-[18px] md:h-[22px] lg:h-[26px] xl:h-[30px]
+                mb-5 xl:mb-8
+                 text-[#ffc102] mx-auto"
+                >
+                  <h1 className="text-xl">Data Analysis</h1>
+                </div>
+              ) : (
+                <FontAwesomeIcon
+                  icon={faDatabase}
+                  className="flex h-[14px] sm:h-[18px] md:h-[22px] lg:h-[26px] xl:h-[30px]
+                mb-5 xl:mb-8 
                 hover:text-[#ffc102] focus:text-[#ffc102] mx-auto"
-              />
+                />
+              )}
             </NavLink>
           </nav>
         </div>
@@ -128,8 +255,8 @@ function SideBar() {
               >
                 <FontAwesomeIcon
                   icon={faLinkedin}
-                  className="flex h-[16px] sm:h-[20px] md:h-[24px] lg:h-[28px] xl:h-[32px]
-                mb-5 xl:mb-7 
+                  className="flex h-[14px] sm:h-[18px] md:h-[22px] lg:h-[26px] xl:h-[30px]
+                mb-5 xl:mb-8 
                  text-[#7f7f7f] hover:text-[#ffc102] focus:text-[#ffc102] mx-auto"
                 />
               </a>
@@ -143,7 +270,7 @@ function SideBar() {
               >
                 <FontAwesomeIcon
                   icon={faGithub}
-                  className="flex h-[16px] sm:h-[20px] md:h-[24px] lg:h-[28px] xl:h-[32px]
+                  className="flex h-[14px] sm:h-[18px] md:h-[22px] lg:h-[26px] xl:h-[30px]
                  text-[#7f7f7f] hover:text-[#ffc102] focus:text-[#ffc102] mx-auto"
                 />
               </a>
