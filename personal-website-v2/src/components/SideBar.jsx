@@ -84,7 +84,7 @@ function SideBar() {
     <>
       <div
         className="absolute h-screen shadow-xl bg-[#181818]
-      w-[8rem] lg:w-[10rem] xl:w-[12rem]"
+      w-[8rem] sm:[9rem] md:w-[10rem] lg:w-[11rem] xl:w-[12rem]"
       >
         <div className="h-[15vh] pt-5">
           <Link to="/">
@@ -106,7 +106,6 @@ function SideBar() {
             <NavLink
               to="/"
               end
-              activeClassName="active"
               className={(navData) =>
                 navData.isActive ? "text-[#ffc102]" : "text-[#7f7f7f]"
               }
@@ -119,7 +118,9 @@ function SideBar() {
                 mb-5 xl:mb-8
                  text-[#ffc102] mx-auto"
                 >
-                  <h1 className="text-xl">Home</h1>
+                  <h1 className="text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl">
+                    Home
+                  </h1>
                 </div>
               ) : (
                 <FontAwesomeIcon
@@ -134,7 +135,6 @@ function SideBar() {
             <NavLink
               to="/web-dev"
               end
-              activeClassName="active"
               className={(navData) =>
                 navData.isActive ? "text-[#ffc102]" : "text-[#7f7f7f]"
               }
@@ -147,7 +147,9 @@ function SideBar() {
                 mb-5 xl:mb-8
                  text-[#ffc102] mx-auto"
                 >
-                  <h1 className="text-xl">Web Dev</h1>
+                  <h1 className="text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl">
+                    Web Dev
+                  </h1>
                 </div>
               ) : (
                 <FontAwesomeIcon
@@ -162,7 +164,6 @@ function SideBar() {
             <NavLink
               to="/java-dev"
               end
-              activeClassName="active"
               className={(navData) =>
                 navData.isActive ? "text-[#ffc102]" : "text-[#7f7f7f]"
               }
@@ -175,7 +176,9 @@ function SideBar() {
                 mb-5 xl:mb-8
                  text-[#ffc102] mx-auto"
                 >
-                  <h1 className="text-xl">Java Dev</h1>
+                  <h1 className="text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl">
+                    Java Dev
+                  </h1>
                 </div>
               ) : (
                 <FontAwesomeIcon
@@ -190,7 +193,6 @@ function SideBar() {
             <NavLink
               to="/machine-learning"
               end
-              activeClassName="active"
               className={(navData) =>
                 navData.isActive ? "text-[#ffc102]" : "text-[#7f7f7f]"
               }
@@ -203,7 +205,9 @@ function SideBar() {
                 mb-5 xl:mb-8
                  text-[#ffc102] mx-auto"
                 >
-                  <h1 className="text-xl">Machine Learning</h1>
+                  <h1 className="text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl">
+                    Machine Learning
+                  </h1>
                 </div>
               ) : (
                 <FontAwesomeIcon
@@ -218,7 +222,6 @@ function SideBar() {
             <NavLink
               to="/data-analysis"
               end
-              activeClassName="active"
               className={(navData) =>
                 navData.isActive ? "text-[#ffc102]" : "text-[#7f7f7f]"
               }
@@ -231,7 +234,9 @@ function SideBar() {
                 mb-5 xl:mb-8
                  text-[#ffc102] mx-auto"
                 >
-                  <h1 className="text-xl">Data Analysis</h1>
+                  <h1 className="text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl">
+                    Data Analysis
+                  </h1>
                 </div>
               ) : (
                 <FontAwesomeIcon
@@ -256,7 +261,7 @@ function SideBar() {
                 <FontAwesomeIcon
                   icon={faLinkedin}
                   className="flex h-[14px] sm:h-[18px] md:h-[22px] lg:h-[26px] xl:h-[30px]
-                mb-5 xl:mb-8 
+                mb-5 xl:mb-5 
                  text-[#7f7f7f] hover:text-[#ffc102] focus:text-[#ffc102] mx-auto"
                 />
               </a>
