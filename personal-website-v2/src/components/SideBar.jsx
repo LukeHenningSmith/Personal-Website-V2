@@ -84,7 +84,7 @@ function SideBar() {
     <>
       <div
         className="absolute h-screen shadow-xl bg-[#181818]
-      w-[8rem] sm:[9rem] md:w-[10rem] lg:w-[11rem] xl:w-[12rem]"
+      w-[8rem] sm:w-[9rem] md:w-[10rem] lg:w-[11rem] xl:w-[12rem]"
       >
         <div className="h-[15vh] pt-5">
           <Link to="/">
