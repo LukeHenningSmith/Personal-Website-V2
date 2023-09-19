@@ -12,6 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import React, { useState } from "react";
+import { Transition } from "@tailwindui/react";
 
 function SideBar() {
   // Home

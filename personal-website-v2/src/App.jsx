@@ -11,10 +11,7 @@ function App() {
     <>
       <div className="relative">
         <SideBar />
-        <div
-          className="
-      ml-[8rem] sm:ml-[9rem] md:ml-[10rem] lg:ml-[11rem] xl:ml-[12rem]"
-        >
+        <div className="ml-[8rem] sm:ml-[9rem] md:ml-[10rem] lg:ml-[11rem] xl:ml-[12rem]">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/web-dev" element={<WebDev />} />
