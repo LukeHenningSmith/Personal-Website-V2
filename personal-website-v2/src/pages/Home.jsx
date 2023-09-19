@@ -8,7 +8,7 @@ function Home() {
     <>
       <div className="flex justify-center items-center h-screen">
         {/* First column */}
-        <div className="w-1/2 p-4 flex flex-col justify-center items-center">
+        <div className="w-1/2 p-4 flex flex-col justify-center items-center max-w-xl">
           {/* Content for the first column */}
           <h1 className="text-6xl text-[#ffc102] font-bold text-center">
             Hi, I'm Luke
@@ -46,9 +46,10 @@ function Home() {
         </div>
 
         {/* Second column */}
-        <div className="w-1/2 p-4 flex flex-col justify-center items-center">
-          {/* Content for the second column */}
-          <img src={LogoLHS} alt="lhs" className="w-[100%] max-w-lg" />
+        <div className="w-1/2 p-4 flex flex-col justify-center items-center max-w-xl">
+          <div className="max-w-xl">
+            <img src={LogoLHS} alt="lhs" className="w-[90%] max-w-xl mx-auto" />
+          </div>
         </div>
       </div>
     </>
