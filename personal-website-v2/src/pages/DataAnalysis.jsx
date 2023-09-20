@@ -44,7 +44,14 @@ function DataAnalysis() {
             Overall Subject Mark: HD (92/100)
           </h3>
         </div>
+      </div>
 
+      <div className="w-1/2 p-4 flex flex-col justify-center items-center max-w-xl">
+        <div className="max-w-xl flex-col">
+          <div className="flex mb-6 mx-auto justify-center items-center">
+            <img src="/images/data_analysis_demo.png" width="100%" />
+          </div>
+        </div>
         <Link
           to="https://github.com/LukeHenningSmith/COVID-Data-Investigation/blob/main/COVID-Investigation.ipynb"
           className="bg-transparent text-[#ffc102] border border-[#ffc102] hover:bg-[#ffc102] 
@@ -60,14 +67,6 @@ function DataAnalysis() {
             />
           </div>
         </Link>
-      </div>
-
-      <div className="w-1/2 p-4 flex flex-col justify-center items-center max-w-xl">
-        <div className="max-w-xl flex-col">
-          <div className="flex mb-6 mx-auto justify-center items-center">
-            <img src="/images/data_analysis_demo.png" width="100%" />
-          </div>
-        </div>
       </div>
     </div>
   );

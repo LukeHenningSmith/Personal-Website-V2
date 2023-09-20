@@ -40,22 +40,6 @@ function JavaDev() {
               Overall Subject Mark: HD (97/100)
             </h3>
           </div>
-
-          <Link
-            to="https://github.com/LukeHenningSmith/Weather-Tracker"
-            className="bg-transparent text-[#ffc102] border border-[#ffc102] hover:bg-[#ffc102] 
-            hover:text-black hover:border-transparent px-4 py-2 rounded 
-            text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl
-           "
-          >
-            <div className="flex">
-              Source Code
-              <FontAwesomeIcon
-                icon={faArrowRight}
-                className="flex h-[14px] sm:h-[18px] md:h-[22px] lg:h-[26px] xl:h-[30px] mx-auto ml-3"
-              />
-            </div>
-          </Link>
         </div>
 
         <div className="w-1/2 p-4 flex flex-col justify-center items-center max-w-xl">
@@ -69,6 +53,21 @@ function JavaDev() {
               />
             </div>
           </div>
+          <Link
+            to="https://github.com/LukeHenningSmith/Weather-Tracker"
+            className="bg-transparent text-[#ffc102] border border-[#ffc102] hover:bg-[#ffc102] 
+            hover:text-black hover:border-transparent px-4 py-2 rounded 
+            text-xs md:text-sm lg:text-base xl:text-lg
+           "
+          >
+            <div className="flex justify-center items-center">
+              Source Code
+              <FontAwesomeIcon
+                icon={faArrowRight}
+                className="flex h-[10px] sm:h-[14px] md:h-[18px] lg:h-[22px] xl:h-[26px] mx-auto ml-3"
+              />
+            </div>
+          </Link>
         </div>
       </div>
     </>
