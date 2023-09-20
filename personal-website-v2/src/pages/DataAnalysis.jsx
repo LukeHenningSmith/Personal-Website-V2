@@ -53,6 +53,7 @@ function DataAnalysis() {
         <CustomButton
           target="_blank"
           link="https://github.com/LukeHenningSmith/COVID-Data-Investigation/blob/main/COVID-Investigation.ipynb"
+          name="Source Code"
         />
       </div>
     </div>

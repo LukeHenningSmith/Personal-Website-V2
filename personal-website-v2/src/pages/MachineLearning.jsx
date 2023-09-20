@@ -50,6 +50,7 @@ function MachineLearning() {
           <CustomButton
             target="_blank"
             link="https://github.com/LukeHenningSmith/ML_Models"
+            name="Source Code"
           />
         </div>
       </div>

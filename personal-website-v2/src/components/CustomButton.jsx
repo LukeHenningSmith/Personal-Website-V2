@@ -16,7 +16,7 @@ function CustomButton(props) {
            "
       >
         <div className="flex justify-center items-center">
-          Source Code
+          {props.name}
           <FontAwesomeIcon
             icon={faArrowRight}
             className="flex h-[10px] sm:h-[14px] md:h-[18px] lg:h-[22px] xl:h-[26px] mx-auto ml-3"

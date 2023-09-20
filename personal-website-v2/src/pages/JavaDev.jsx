@@ -55,6 +55,7 @@ function JavaDev() {
           <CustomButton
             target="_blank"
             link="https://github.com/LukeHenningSmith/Weather-Tracker"
+            name="Source Code"
           />
         </div>
       </div>

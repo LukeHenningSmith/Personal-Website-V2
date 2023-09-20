@@ -41,7 +41,7 @@ function Home() {
               lhen4176@uni.sydney.edu.au
             </h3>
           </div>
-          <CustomButton target="" link="/web-dev" />
+          <CustomButton target="" link="/web-dev" name="Portfolio" />
         </div>
 
         {/* Second column */}
