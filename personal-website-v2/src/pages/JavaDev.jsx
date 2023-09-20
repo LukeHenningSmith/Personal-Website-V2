@@ -50,10 +50,13 @@ function JavaDev() {
                 height="auto"
                 url="/videos/weather_tracker_demo.mov"
                 controls={true}
+                playing={true}
               />
             </div>
           </div>
           <Link
+            target="_blank"
+            rel="noreferrer"
             to="https://github.com/LukeHenningSmith/Weather-Tracker"
             className="bg-transparent text-[#ffc102] border border-[#ffc102] hover:bg-[#ffc102] 
             hover:text-black hover:border-transparent px-4 py-2 rounded 

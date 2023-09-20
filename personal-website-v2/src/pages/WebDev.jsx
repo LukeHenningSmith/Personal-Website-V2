@@ -50,6 +50,7 @@ function WebDev() {
                 height="auto"
                 url="/videos/farmware_demo_1.mov"
                 controls={true}
+                playing={true}
               />
             </div>
             <div className="flex mx-auto justify-center items-center">
@@ -58,6 +59,7 @@ function WebDev() {
                 height="auto"
                 url="/videos/farmware_demo_2.mov"
                 controls={true}
+                playing={true}
               />
             </div>
           </div>
