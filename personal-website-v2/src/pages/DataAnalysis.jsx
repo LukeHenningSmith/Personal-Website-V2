@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import CustomButton from "../components/CustomButton";
 
 function DataAnalysis() {
   return (
@@ -52,23 +50,10 @@ function DataAnalysis() {
             <img src="/images/data_analysis_demo.png" width="100%" />
           </div>
         </div>
-        <Link
+        <CustomButton
           target="_blank"
-          rel="noreferrer"
-          to="https://github.com/LukeHenningSmith/COVID-Data-Investigation/blob/main/COVID-Investigation.ipynb"
-          className="bg-transparent text-[#ffc102] border border-[#ffc102] hover:bg-[#ffc102] 
-            hover:text-black hover:border-transparent px-4 py-2 rounded 
-            text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl
-           "
-        >
-          <div className="flex">
-            Source Code
-            <FontAwesomeIcon
-              icon={faArrowRight}
-              className="flex h-[14px] sm:h-[18px] md:h-[22px] lg:h-[26px] xl:h-[30px] mx-auto ml-3"
-            />
-          </div>
-        </Link>
+          link="https://github.com/LukeHenningSmith/COVID-Data-Investigation/blob/main/COVID-Investigation.ipynb"
+        />
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import LogoLHS from "/images/lhs_logo_tilted.png";
 import { faEnvelope, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import CustomButton from "../components/CustomButton";
 
 function Home() {
   return (
@@ -41,22 +42,7 @@ function Home() {
               lhen4176@uni.sydney.edu.au
             </h3>
           </div>
-
-          <Link
-            to="/web-dev"
-            className="bg-transparent text-[#ffc102] border border-[#ffc102] hover:bg-[#ffc102] 
-            hover:text-black hover:border-transparent px-4 py-2 rounded 
-            text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl
-           "
-          >
-            <div className="flex">
-              Portfolio
-              <FontAwesomeIcon
-                icon={faArrowRight}
-                className="flex h-[14px] sm:h-[18px] md:h-[22px] lg:h-[26px] xl:h-[30px] mx-auto ml-3"
-              />
-            </div>
-          </Link>
+          <CustomButton target="" link="/web-dev" />
         </div>
 
         {/* Second column */}

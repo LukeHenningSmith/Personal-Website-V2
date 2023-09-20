@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import CustomButton from "../components/CustomButton";
 
 function MachineLearning() {
   return (
@@ -49,23 +47,10 @@ function MachineLearning() {
             </h3>
           </div>
 
-          <Link
+          <CustomButton
             target="_blank"
-            rel="noreferrer"
-            to="https://github.com/LukeHenningSmith/ML_Models"
-            className="bg-transparent text-[#ffc102] border border-[#ffc102] hover:bg-[#ffc102] 
-            hover:text-black hover:border-transparent px-4 py-2 rounded 
-            text-xs md:text-sm lg:text-base xl:text-lg
-           "
-          >
-            <div className="flex justify-center items-center">
-              Source Code
-              <FontAwesomeIcon
-                icon={faArrowRight}
-                className="flex h-[10px] sm:h-[14px] md:h-[18px] lg:h-[22px] xl:h-[26px] mx-auto ml-3"
-              />
-            </div>
-          </Link>
+            link="https://github.com/LukeHenningSmith/ML_Models"
+          />
         </div>
       </div>
     </>
