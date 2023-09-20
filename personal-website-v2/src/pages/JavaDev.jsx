@@ -1,6 +1,3 @@
-import { Link } from "react-router-dom";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ReactPlayer from "react-player";
 import CustomButton from "../components/CustomButton";
 

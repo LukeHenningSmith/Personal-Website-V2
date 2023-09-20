@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
 import LogoLHS from "/images/lhs_logo_tilted.png";
-import { faEnvelope, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CustomButton from "../components/CustomButton";
 
