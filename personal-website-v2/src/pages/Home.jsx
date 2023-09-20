@@ -19,18 +19,20 @@ function Home() {
           </h1>
           <h1
             className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl
-          mb-6 text-white font-bold text-center"
+           text-white font-bold text-center
+          mb-2 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6"
           >
             Software Engineering & Chemistry Student at the University of Sydney
           </h1>
           <h2
             className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl
-                    mb-6 text-[#ffc102] italic text-center"
+                  text-[#ffc102] italic text-center
+                  mb-2 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6"
           >
             Web Dev | Machine Learning | Computational Chemistry
           </h2>
 
-          <div className="flex text-[#7f7f7f] mb-6">
+          <div className="flex text-[#7f7f7f] mb-2 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6">
             <FontAwesomeIcon
               icon={faEnvelope}
               className="flex h-[14px] sm:h-[18px] md:h-[22px] lg:h-[26px] xl:h-[30px] mx-auto mr-3"
