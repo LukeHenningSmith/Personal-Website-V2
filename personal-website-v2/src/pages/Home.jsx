@@ -10,14 +10,23 @@ function Home() {
         {/* First column */}
         <div className="w-1/2 p-4 flex flex-col justify-center items-center max-w-xl">
           {/* Content for the first column */}
-          <h1 className="text-6xl text-[#ffc102] font-bold text-center">
+          <h1
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl
+           text-[#ffc102] font-bold text-center"
+          >
             Hi, I'm Luke
             <br />
           </h1>
-          <h1 className="text-5xl mb-6 text-white font-bold text-center">
+          <h1
+            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl
+          mb-6 text-white font-bold text-center"
+          >
             Software Engineering & Chemistry Student at the University of Sydney
           </h1>
-          <h2 className="text-xl mb-6 text-[#ffc102] italic">
+          <h2
+            className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl
+                    mb-6 text-[#ffc102] italic text-center"
+          >
             Web Dev | Machine Learning | Computational Chemistry
           </h2>
 
@@ -26,14 +35,16 @@ function Home() {
               icon={faEnvelope}
               className="flex h-[14px] sm:h-[18px] md:h-[22px] lg:h-[26px] xl:h-[30px] mx-auto mr-3"
             />
-            <h3 className="text-xl font-bold italic">
+            <h3 className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-bold italic">
               lhen4176@uni.sydney.edu.au
             </h3>
           </div>
 
           <Link
             to="/web-dev"
-            className="bg-transparent text-[#ffc102] border border-[#ffc102] hover:bg-[#ffc102] hover:text-black hover:border-transparent px-4 py-2 rounded text-xl"
+            className="bg-transparent text-[#ffc102] border border-[#ffc102] hover:bg-[#ffc102] hover:text-black hover:border-transparent px-4 py-2 rounded 
+            text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl
+           "
           >
             <div className="flex">
               Portfolio
