@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import LogoLHS from "/images/lhs_logo_tilted.png";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ReactPlayer from "react-player";
@@ -33,12 +32,30 @@ function JavaDev() {
             GUI testing with mocked external dependencies is used.
           </h1>
 
-          <div className="flex text-[#ffc102] mb-2 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6">
-            <h3 className="text-xs lg:text-base xl:text-xl font-bold italic">
-              Subject: SOFT3202 (Software Construction & Design 2) <br />
+          <div className=" text-[#ffc102] mb-2 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6">
+            <h3 className="text-xs lg:text-base xl:text-xl font-bold italic text-center">
+              Subject: SOFT3202 (Software Construction & Design 2)
+            </h3>
+            <h3 className="text-xs lg:text-base xl:text-xl font-bold italic text-center">
               Overall Subject Mark: HD (97/100)
             </h3>
           </div>
+
+          <Link
+            to="https://github.com/LukeHenningSmith/Weather-Tracker"
+            className="bg-transparent text-[#ffc102] border border-[#ffc102] hover:bg-[#ffc102] 
+            hover:text-black hover:border-transparent px-4 py-2 rounded 
+            text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl
+           "
+          >
+            <div className="flex">
+              Source Code
+              <FontAwesomeIcon
+                icon={faArrowRight}
+                className="flex h-[14px] sm:h-[18px] md:h-[22px] lg:h-[26px] xl:h-[30px] mx-auto ml-3"
+              />
+            </div>
+          </Link>
         </div>
 
         <div className="w-1/2 p-4 flex flex-col justify-center items-center max-w-xl">

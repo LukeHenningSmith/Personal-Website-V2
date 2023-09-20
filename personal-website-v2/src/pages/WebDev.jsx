@@ -31,9 +31,11 @@ function WebDev() {
             development and the secure build and deployment to AWS.
           </h1>
 
-          <div className="flex text-[#ffc102] mb-2 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6">
-            <h3 className="text-xs lg:text-base xl:text-xl font-bold italic">
-              Subject: ELEC3609 (Internet Software Platforms) <br />
+          <div className=" text-[#ffc102] mb-2 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6">
+            <h3 className="text-xs lg:text-base xl:text-xl font-bold italic text-center">
+              Subject: ELEC3609 (Internet Software Platforms)
+            </h3>
+            <h3 className="text-xs lg:text-base xl:text-xl font-bold italic text-center">
               Overall Subject Mark: HD (85/100)
             </h3>
           </div>
