@@ -102,7 +102,7 @@ function SideBar() {
           </Link>
         </div>
 
-        <div className="h-[70vh] flex flex-col items-center justify-center">
+        <div className="h-[70vh] flex flex-col items-center justify-center mx-auto">
           <nav>
             <NavLink
               to="/"

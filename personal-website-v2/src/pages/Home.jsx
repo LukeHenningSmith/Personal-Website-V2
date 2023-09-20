@@ -44,7 +44,8 @@ function Home() {
 
           <Link
             to="/web-dev"
-            className="bg-transparent text-[#ffc102] border border-[#ffc102] hover:bg-[#ffc102] hover:text-black hover:border-transparent px-4 py-2 rounded 
+            className="bg-transparent text-[#ffc102] border border-[#ffc102] hover:bg-[#ffc102] 
+            hover:text-black hover:border-transparent px-4 py-2 rounded 
             text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl
            "
           >
