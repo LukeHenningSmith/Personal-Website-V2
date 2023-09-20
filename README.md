@@ -1,6 +1,6 @@
 # Personal-Website-V2
 
-Personal website remade using React and TailwindCSS
+Personal portfolio website made using React and TailwindCSS
 
 ## By Luke Henning-Smith
 
